@@ -1,19 +1,25 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [v2.1.0]
+### Added
+- Decoders and rules for anti-flooding mechanism
+### Fixed
+ - Fixed Windows decoders to extract the proper fields
 
-## [v2.0.1] - 2017-??-??
+## [v2.0.1]
 ### Added
 - Rules/decoders:
- - Microsoft Windows Defender
- - Microsoft log related events
- - Microsoft SQL Server
- - Identity guard
- - Sysmon events 11 and 15
- - MongoDB
- - Docker
- - Jenkins
- - AWS S3
+  - Microsoft Windows Defender
+  - Microsoft log related events
+  - Microsoft SQL Server
+  - Identity guard
+  - Sysmon events 11 and 15
+  - MongoDB
+  - Docker
+  - Jenkins
+  - AWS S3
+- update_ruleset.py accepts a custom download URL
 
 ### Changed
  - web-accesslog_decoders.xml
@@ -21,9 +27,13 @@ All notable changes to this project will be documented in this file.
  - Rootcheck references
  - Sysmon uses dynamic fields
  - getawslog.py: Ignore digest files
+ - Fortigate decoders
+ - Apache decoders
 
 ### Fixed
  - Bug in update_ruleset.py
+ - Netstat command
+ - SSH rootchecks
 
 
 ## [v2.0] - 2017-04-24

@@ -125,7 +125,8 @@
     <description>Trying to add an agent with duplicated IP.</description>
     <group>pci_dss_10.6.1,</group>
   </rule>
-
+ 
+  
   <!-- Process monitoring rules -->
   <rule id="530" level="0">
     <if_sid>500</if_sid>
@@ -150,7 +151,7 @@
 
   <rule id="533" level="7">
     <if_sid>530</if_sid>
-    <match>ossec: output: 'netstat -tan</match>
+    <match>ossec: output: 'netstat listening ports</match>
     <check_diff />
     <description>Listened ports status (netstat) changed (new port opened or closed).</description>
     <group>pci_dss_10.2.7,pci_dss_10.6.1,</group>
